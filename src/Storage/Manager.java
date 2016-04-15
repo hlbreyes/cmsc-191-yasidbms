@@ -59,13 +59,13 @@ public class Manager {
 	// this method stores table data into the storage unit dedicated for table data
 	// it accepts an arraylist of strings as input wherein in each value is separated by a comma
 	public void storeTableData(File file, ArrayList<String> data) throws IOException {
-		BufferedWriter bw = new BufferedWriter(new FileWriter(file));
+		BufferedWriter bw = new BufferedWriter(new FileWriter(file, true));
 		
 		for(int i = 0; i<data.size(); i++) {
 			bw.write(data.get(i));
 			bw.newLine();
-		}
+		}	
 		
 		bw.close();
 	}
-}
+}	

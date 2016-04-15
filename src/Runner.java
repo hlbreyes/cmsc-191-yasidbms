@@ -17,8 +17,11 @@ public class Runner {
 			for (Data data : result) {
 				System.out.println(data.id + " " + data.first_name + " " + data.last_name + " " + data.email_address + " " + data.contact_number);
 			}
+//			ArrayList<String> data = new ArrayList<String>();
+//			data.add("HAHAHA");
+//			storage_manager.storeTableData(file, data);
 		} else {
-			
+			System.out.println("TABLE DOES NOT EXIST");
 		}
 	}
 
